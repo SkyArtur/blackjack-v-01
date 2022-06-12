@@ -7,8 +7,9 @@
 
 > Status : Concluído
 
+![GitHub repo size](https://img.shields.io/github/repo-size/SkyArtur/blackjack-v-01)
+![GitHub stars](https://img.shields.io/github/stars/SkyArtur/blackjack-v-01?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/SkyArtur/blackjack-v-01?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/SkyArtur/blackjack-v-01?style=social)
 
 ## Sobre mim e sobre este projeto:
 Quando resolvi deixar de ser um simples usuário, e passar a fazer parte deste universo da programação, um sentimento de pânico surgiu quando comecei a imaginar como eu faria para aprender tantas linguagens de programação, tantas siglas e tudo mais. Mas com a ajuda, mesmo a distância, de professores, amigos e livros, as coisas começaram a fluir. Por uma semana busquei reunir o pouco que aprendi neste projeto, o qual espero que no futuro, possa olhar com vergonha pelos erros que cometi, mas que por hora, me dá muito orgulho.
