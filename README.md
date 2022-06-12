@@ -7,7 +7,7 @@
 
 > Status : Concluído
 
-![GitHub forks](https://img.shields.io/github/forks/skyartur/blackjack-v-01?style=social)
+![GitHub forks](https://img.shields.io/github/forks/SkyArtur/blackjack-v-01?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/SkyArtur/blackjack-v-01?style=social)
 
 ## Sobre mim e sobre este projeto:
