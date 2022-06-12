@@ -36,7 +36,9 @@ Também criei inputs para o usuário de modo a não permtir que o programa quebr
 
 https://user-images.githubusercontent.com/93395366/173219560-8ac99e2e-27e1-472c-b829-ea4fd099691a.mp4
 
-Há um executavel em 
+O programa é dividido em sete módulos, o principal, três módulos para login e três para o jogo. A pasta usuarios, onde fica armazenado o arquivo .txt é criada automaticamente apartir do primeiro usuário cadastrado. 
+
+Há um executável em exe.win-amd64-3.10, feito com cx-Freeze.
  
 ## Agradecimento mais que especial 🙏
 
