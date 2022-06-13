@@ -24,8 +24,8 @@ class Menu:
         :return: int: resposta do usuário
         """
         msg = '''Atenção:
-        Parece que você o que você digitou 
-        não é uma opção válida!'''
+        Parece que você digitou 
+        uma opção inválida!'''
         while True:
             self.__resposta = input('=> ')
             while not self.__resposta.isalpha():
