@@ -1,17 +1,17 @@
 from hashlib import md5
-
+from getpass import getpass
 
 class Entrada:
-    def __init__(self, entrada='=> '):
+    def __init__(self, entrada='=> ', option=None):
         """
         Input para entrada de dados do usuário. Higieniza a entrada do usuário,
         retornando um string sem caractéres acentuados ou espaços vazios.
 
         :param entrada: entrada_usuario
         """
-        self.__entrada = self.__validar(entrada)
+        self.__entrada = self.__validar(entrada, option)
 
-    def __validar(self, entrada):
+    def __validar(self, entrada, option):
         """
         Função para validação da entrada do usuário mantendo o mesmo em um laço
         até que os caractéres digitados não contenham  espaços ou acentos.
@@ -23,12 +23,20 @@ class Entrada:
         Não são aceitos letras acentuadas ou 
         espaços vazios entre as letras.
         '''
-        while True:
-            self.__entrada = input(entrada)
-            if self.__entrada.find(' ') > -1 or not self.__entrada.isascii():
-                print(msg)
-            else:
-                return self.__entrada
+        if option == "senha":
+            while True:
+                self.__entrada = getpass(entrada)
+                if self.__entrada.find(' ') > -1 or not self.__entrada.isascii():
+                    print(msg)
+                else:
+                    return self.__entrada
+        else:
+            while True:
+                self.__entrada = input(entrada)
+                if self.__entrada.find(' ') > -1 or not self.__entrada.isascii():
+                    print(msg)
+                else:
+                    return self.__entrada
 
     @property
     def hash_entrada(self):
@@ -41,6 +49,4 @@ class Entrada:
         self.__entrada = bytes(str(self.__entrada.strip()), 'utf-8')
         self.__entrada = md5(self.__entrada).hexdigest()
         return self.__entrada
-
-
 

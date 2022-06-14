@@ -39,7 +39,7 @@ class Cadastro(Usuario):
         """
         super().__init__()
         self.nome = Entrada('Digite seu nome de usuário: ').hash_entrada
-        self.senha = Entrada('Digite a sua chave: ').hash_entrada
+        self.senha = Entrada('Digite a sua chave: ', 'senha').hash_entrada
 
     @property
     def cadastrar(self):
