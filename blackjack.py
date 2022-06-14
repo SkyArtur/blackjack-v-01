@@ -107,9 +107,9 @@ def iniciar_blackjack():
                 blackjack()
         elif resposta == 2:
             usuario = Cadastro().cadastrar
-            while not usuario:
+            if not usuario:
                 print(msg_02)
-                usuario = Cadastro().cadastrar
+                continue
             else:
                 print(msg_03)
                 blackjack()
